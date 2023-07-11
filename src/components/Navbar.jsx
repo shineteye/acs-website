@@ -1,17 +1,18 @@
-import Button from "./Button"
+import Link from "next/link"
+import AuthButton from "./AuthButton"
 import Logo from "./Logo"
 
 function Navbar() {
     return (
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between px-24 py-5">
             <Logo />
-            <div className="flex ml-10 items-center space-x-4 text-blue-950 text-lg">
-                <h1>Home</h1>
-                <h1>About</h1>
-                <h1>Gallery</h1>
-                <h1>Contact us</h1>
+            <div className="flex items-center ml-10 space-x-4 text-lg text-blue-950">
+                <Link href={"/"}>Home</Link>
+                <Link href={"/about"}>About</Link>
+                <Link href={"/gallery"}>Gallery</Link>
+                <Link href={"/contact_us"}>Contact us</Link>
             </div>
-            <Button />
+            <AuthButton />
         </div>
     )
 }
