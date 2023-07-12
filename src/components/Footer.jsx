@@ -1,7 +1,7 @@
 
 function Footer() {
     return (
-        <div className='py-24 text-white  bg-blue-950'>
+        <div className='py-24 text-white bg-darkBlue'>
             <h1 className="text-center">Want to enroll?</h1>
         </div>
     )
